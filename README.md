@@ -1,3 +1,40 @@
+require('./hello.js');  调用
+
+
+arguments是函数的内置对象，只出现在函数中
+
+console.log(arguments.callee.toString());
+
+var usename='zhangshanfeng';
+console.log(usename);
+arguments是函数的内置对象，只出现在函数中
+
+console.log(arguments.callee.toString());
+
+module.exports.usename=usename;
+
+node.js 基于模块化的方式对代码进行组织和管理，
+采用的的模块化规范是commonjs
+
+所有用户编写的代码都是局部的，要与其他模块共享，可用exports
+
+require引入模块
+	1.自定义模块
+	2.第三方模块---npm install 包名
+	3.系统模块--fs http
+	
+http通信模块---可创建http服务器，或作为客户端向其他服务器发起请求
+
+fs模块---文件系统模块，对文件的操作
+
+---读文件：直接读取（对于小文件，快速读取）（同步->顺序读取，异步->先读，再回调）
+		  流读取（适合网络通信，服务器->客户端）
+
+流---字节数据
+
+
+
+
 //console.log('你好');
 
 /*
